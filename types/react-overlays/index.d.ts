@@ -7,19 +7,7 @@
 // TypeScript Version: 2.8
 import * as React from 'react';
 
-export {
-    Affix,
-    AutoAffix,
-    Modal,
-    ModalManager,
-    Overlay,
-    Portal,
-    Dropdown,
-    DropdownMenu,
-    DropdownToggle,
-    RootCloseWrapper,
-    WaitForContainer,
-} from './lib';
+export { Dropdown, Modal, Overlay, Portal, useRootClose } from './lib';
 
 // these callbacks are used in a few components
 export interface TransitionCallbacks {

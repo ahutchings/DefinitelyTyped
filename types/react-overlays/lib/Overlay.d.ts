@@ -3,7 +3,7 @@ import * as React from 'react';
 import { TransitionCallbacks } from 'react-overlays';
 import { TransitionProps } from 'react-transition-group/Transition';
 
-import { RootCloseWrapper } from '.';
+import { useRootClose } from '.';
 import { PortalProps } from './Portal';
 
 declare class Overlay extends React.Component<Overlay.OverlayProps> {}
@@ -62,7 +62,7 @@ declare namespace Overlay {
         /**
          * Specify event for toggling overlay
          */
-        rootCloseEvent?: RootCloseWrapper.RootCloseWrapperProps['event'];
+        rootCloseEvent?: useRootClose.UseRootCloseOptions['clickTrigger'];
 
         /**
          * Specify disabled for disable RootCloseWrapper
