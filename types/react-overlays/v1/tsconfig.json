@@ -2,12 +2,15 @@
     "compilerOptions": {
         "module": "commonjs",
         "lib": ["es6", "dom"],
+        "paths": {
+            "react-overlays": ["react-overlays/v1"]
+        },
         "noImplicitAny": true,
         "noImplicitThis": true,
         "strictNullChecks": false,
         "strictFunctionTypes": true,
-        "baseUrl": "../",
-        "typeRoots": ["../"],
+        "baseUrl": "../../",
+        "typeRoots": ["../../"],
         "types": [],
         "noEmit": true,
         "forceConsistentCasingInFileNames": true,
