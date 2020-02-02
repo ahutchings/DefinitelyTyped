@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Overlay = require('react-overlays/Overlay');
+import usePopper = require('react-overlays/usePopper');
 import useRootClose = require('react-overlays/useRootClose');
 
 import { OverlayFade } from './react-overlays-tests-transition';
@@ -43,6 +44,10 @@ class TestOverlay extends React.Component<{}, { open: boolean }> {
         );
     }
 }
+
+const TestUsePopper = () => {
+    usePopper(document.body, document.body);
+};
 
 const TestUseRootClose = () => {
     const ref = React.useRef<HTMLDivElement>();
