@@ -1,4 +1,4 @@
-// Type definitions for React Overlays 1.1
+// Type definitions for React Overlays 2.1
 // Project: https://github.com/react-bootstrap/react-overlays
 // Definitions by: Aaron Beall <https://github.com/aaronbeall>
 //                 Vito Samson <https://github.com/vitosamson>
