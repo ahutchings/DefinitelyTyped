@@ -3,6 +3,7 @@
 // Definitions by: Aaron Beall <https://github.com/aaronbeall>
 //                 Vito Samson <https://github.com/vitosamson>
 //                 Aaron Dancer <https://github.com/aarondancer>
+//                 Andrew Hutchings <https://github.com/ahutchings>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 import * as React from 'react';
