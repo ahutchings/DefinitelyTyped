@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Overlay = require('react-overlays/lib/Overlay');
-import useRootClose = require('react-overlays/lib/useRootClose');
+import Overlay = require('react-overlays/Overlay');
+import useRootClose = require('react-overlays/useRootClose');
 
 import { OverlayFade } from './react-overlays-tests-transition';
 
