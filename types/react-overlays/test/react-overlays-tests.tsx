@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Overlay, useDropdownToggle, useRootClose } from 'react-overlays';
-import { OverlayRenderProps } from 'react-overlays/lib/Overlay';
+import { OverlayRenderProps } from 'react-overlays/Overlay';
 
 import { OverlayFade } from './react-overlays-tests-transition';
 

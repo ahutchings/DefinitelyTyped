@@ -3,14 +3,14 @@ import * as React from 'react';
 import { TransitionCallbacks } from 'react-overlays';
 import { TransitionProps } from 'react-transition-group/Transition';
 
-import * as ModalManager from './ModalManager';
+import ModalManager from './ModalManager';
 import { PortalProps } from './Portal';
 
 declare class Modal extends React.Component<ModalProps> {
     public static Manager: ModalManager;
 }
-declare namespace Modal {}
-export = Modal;
+
+export default Modal;
 
 interface ModalProps extends TransitionCallbacks, PortalProps {
     className?: string;

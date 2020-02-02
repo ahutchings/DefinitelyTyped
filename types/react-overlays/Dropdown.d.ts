@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import DropdownMenu = require('./DropdownMenu');
-import DropdownToggle = require('./DropdownToggle');
+import DropdownMenu from './DropdownMenu';
+import DropdownToggle from './DropdownToggle';
 
 declare class Dropdown extends React.Component<Dropdown.DropdownProps> {
     static Menu: typeof DropdownMenu;
     static Toggle: typeof DropdownToggle;
 }
-export = Dropdown;
+export default Dropdown;
 
 declare namespace Dropdown {
     interface DropdownRenderProps {

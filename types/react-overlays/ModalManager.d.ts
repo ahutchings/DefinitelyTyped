@@ -1,4 +1,4 @@
-import * as Modal from './Modal';
+import Modal from './Modal';
 
 declare class ModalManager {
     constructor(opts?: { hideSiblingNodes?: boolean; handleContainerOverflow?: boolean });
@@ -10,5 +10,5 @@ declare class ModalManager {
     remove(modal: Modal): void;
     isTopModal(modal: Modal): boolean;
 }
-declare namespace ModalManager {}
-export = ModalManager;
+
+export default ModalManager;

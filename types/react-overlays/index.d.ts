@@ -7,7 +7,13 @@
 // TypeScript Version: 2.8
 import * as React from 'react';
 
-export { Dropdown, Modal, Overlay, Portal, useDropdownMenu, useDropdownToggle, useRootClose } from './lib';
+export { default as Dropdown } from './Dropdown';
+export { default as Modal } from './Modal';
+export { default as Overlay } from './Overlay';
+export { default as Portal } from './Portal';
+export { useDropdownMenu } from './DropdownMenu';
+export { useDropdownToggle } from './DropdownToggle';
+export { default as useRootClose } from './useRootClose';
 
 // these callbacks are used in a few components
 export interface TransitionCallbacks {

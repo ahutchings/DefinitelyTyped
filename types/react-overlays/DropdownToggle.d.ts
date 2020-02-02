@@ -5,19 +5,17 @@ import * as React from 'react';
  * to the element that functions as the dropdown toggle (generally a button).
  */
 declare function useDropdownToggle(): [
-    useDropdownToggle.DropdownToggleProps,
+    DropdownToggleProps,
     {
         show: boolean;
         toggle(show: boolean): void;
     },
 ];
 
-declare namespace useDropdownToggle {
-    interface DropdownToggleProps {
-        ref: (popperNode: HTMLElement | null) => void;
-        'aria-haspopup': true;
-        'aria-expanded': boolean;
-    }
+interface DropdownToggleProps {
+    ref: (popperNode: HTMLElement | null) => void;
+    'aria-haspopup': true;
+    'aria-expanded': boolean;
 }
 
 export { useDropdownToggle };
