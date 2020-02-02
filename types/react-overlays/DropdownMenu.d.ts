@@ -2,22 +2,10 @@ import * as React from 'react';
 
 import Overlay = require('./Overlay');
 
-declare class DropdownMenu extends React.Component<DropdownMenu.DropdownMenuProps> {}
-export = DropdownMenu;
+declare function useDropdownMenu(options: useDropdownMenu.UseDropdownMenuOptions): void;
 
-declare namespace DropdownMenu {
-    interface DropdownMenuRenderProps extends Overlay.OverlayRenderProps {
-        alignEnd: boolean;
-        close(event: React.SyntheticEvent<any>): void;
-    }
-
-    interface DropdownMenuProps {
-        /**
-         * A render prop that returns a Menu element. The `props`
-         * argument should spread through to **a component that can accept a ref**.
-         */
-        children(renderProps: DropdownMenuRenderProps): React.ReactElement;
-
+declare namespace useDropdownMenu {
+    interface UseDropdownMenuOptions {
         /**
          * Controls the visible state of the menu, generally this is
          * provided by the parent `Dropdown` component,
@@ -49,5 +37,25 @@ declare namespace DropdownMenu {
          * Override the default event used by RootCloseWrapper.
          */
         rootCloseEvent?: string;
+    }
+}
+
+export { useDropdownMenu };
+
+declare class DropdownMenu extends React.Component<DropdownMenu.DropdownMenuProps> {}
+export default DropdownMenu;
+
+declare namespace DropdownMenu {
+    interface DropdownMenuRenderProps extends Overlay.OverlayRenderProps {
+        alignEnd: boolean;
+        close(event: React.SyntheticEvent<any>): void;
+    }
+
+    interface DropdownMenuProps extends useDropdownMenu.UseDropdownMenuOptions {
+        /**
+         * A render prop that returns a Menu element. The `props`
+         * argument should spread through to **a component that can accept a ref**.
+         */
+        children(renderProps: DropdownMenuRenderProps): React.ReactElement;
     }
 }

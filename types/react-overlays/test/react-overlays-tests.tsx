@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Overlay, useRootClose } from 'react-overlays';
+import { Overlay, useDropdownToggle, useRootClose } from 'react-overlays';
 import { OverlayRenderProps } from 'react-overlays/lib/Overlay';
 
 import { OverlayFade } from './react-overlays-tests-transition';
@@ -40,6 +40,12 @@ class TestOverlay extends React.Component<{}, { open: boolean }> {
         );
     }
 }
+
+const TestUseDropdownToggle = () => {
+    const [props, { show, toggle }] = useDropdownToggle();
+
+    return <div {...props} onClick={() => toggle(!show)} />;
+};
 
 const TestUseRootClose = () => {
     const ref = React.useRef<HTMLDivElement>();
