@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Overlay, { OverlayRenderProps } from './Overlay';
+import Overlay = require('./Overlay');
 
 declare function useDropdownMenu(options: DropdownMenuOptions): void;
 
@@ -44,7 +44,7 @@ declare class DropdownMenu extends React.Component<DropdownMenu.DropdownMenuProp
 export default DropdownMenu;
 
 declare namespace DropdownMenu {
-    interface DropdownMenuRenderProps extends OverlayRenderProps {
+    interface DropdownMenuRenderProps extends Overlay.OverlayRenderProps {
         alignEnd: boolean;
         close(event: React.SyntheticEvent<any>): void;
     }

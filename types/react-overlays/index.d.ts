@@ -7,14 +7,15 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 import * as React from 'react';
+import Dropdown = require('./Dropdown');
+import Modal = require('./Modal');
+import Overlay = require('./Overlay');
+import Portal = require('./Portal');
+import useDropdownMenu = require('./DropdownMenu');
+import useDropdownToggle = require('./DropdownToggle');
+import useRootClose = require('./useRootClose');
 
-export { default as Dropdown } from './Dropdown';
-export { default as Modal } from './Modal';
-export { default as Overlay } from './Overlay';
-export { default as Portal } from './Portal';
-export { useDropdownMenu } from './DropdownMenu';
-export { useDropdownToggle } from './DropdownToggle';
-export { default as useRootClose } from './useRootClose';
+export { Dropdown, Modal, Overlay, Portal, useDropdownMenu, useDropdownToggle, useRootClose };
 
 // these callbacks are used in a few components
 export interface TransitionCallbacks {

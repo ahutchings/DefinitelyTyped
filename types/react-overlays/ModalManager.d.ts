@@ -1,4 +1,4 @@
-import Modal from './Modal';
+import Modal = require('./Modal');
 
 declare class ModalManager {
     constructor(opts?: { hideSiblingNodes?: boolean; handleContainerOverflow?: boolean });
@@ -11,4 +11,4 @@ declare class ModalManager {
     isTopModal(modal: Modal): boolean;
 }
 
-export default ModalManager;
+export = ModalManager;

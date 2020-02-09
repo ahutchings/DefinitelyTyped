@@ -7,7 +7,7 @@ declare class Dropdown extends React.Component<Dropdown.DropdownProps> {
     static Menu: typeof DropdownMenu;
     static Toggle: typeof DropdownToggle;
 }
-export default Dropdown;
+export = Dropdown;
 
 declare namespace Dropdown {
     interface DropdownRenderProps {

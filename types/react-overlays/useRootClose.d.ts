@@ -9,16 +9,17 @@
 declare function useRootClose(
     ref: React.Ref<HTMLElement> | HTMLElement,
     onRootClose: (event: React.SyntheticEvent<HTMLElement>) => void,
-    options?: RootCloseOptions,
+    options?: useRootClose.RootCloseOptions,
 ): void;
 
-interface RootCloseOptions {
-    /**
-     * The DOM event name (click, mousedown, etc) to attach listeners on
-     */
-    clickTrigger?: 'click' | 'mousedown';
-    disabled: boolean;
-}
+export = useRootClose;
 
-export default useRootClose;
-export { RootCloseOptions };
+declare namespace useRootClose {
+    interface RootCloseOptions {
+        /**
+         * The DOM event name (click, mousedown, etc) to attach listeners on
+         */
+        clickTrigger?: 'click' | 'mousedown';
+        disabled: boolean;
+    }
+}
